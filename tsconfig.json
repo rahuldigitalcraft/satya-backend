@@ -1,0 +1,39 @@
+// {
+//   "compilerOptions": {
+//     "module": "commonjs",
+//     "declaration": true,
+//     "removeComments": true,
+//     "esModuleInterop": true,
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "allowSyntheticDefaultImports": true,
+//     "target": "es2017",
+//     "sourceMap": true,
+//     "outDir": "./dist",
+//     "baseUrl": "./",
+//     "incremental": true
+//   }
+// }
+
+// new code
+{
+    "compilerOptions": {
+      "typeRoots": ["./node_modules/@types", "./types"],    // Includes types from node_modules and custom types folder
+      "types": ["node"],                                    // Removed 'express-handlebars'
+      "module": "commonjs",                                 // CommonJS module system
+      "declaration": true,                                  // Generates corresponding .d.ts files
+      "removeComments": true,                               // Removes comments in output files
+      "esModuleInterop": true,                              // Ensures ES module interop with CommonJS
+      "emitDecoratorMetadata": true,                        // Emits decorator metadata
+      "experimentalDecorators": true,                       // Enables experimental support for decorators
+      "allowSyntheticDefaultImports": true,                 // Allow default imports from modules with no default export
+      "target": "es2017",                                   // Target ECMAScript version
+      "sourceMap": true,                                    // Generates source maps
+      "outDir": "./dist",                                   // Redirects output to 'dist' folder
+      "baseUrl": "./",                                      // Base directory for resolving non-relative module names
+      "incremental": true                                   // Enables incremental compilation
+    }
+  }
+  
+
+  
